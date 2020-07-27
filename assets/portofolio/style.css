@@ -1,0 +1,98 @@
+html {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin-bottom: 120px; /* sama dengan footer */
+}
+
+.jumbotron {
+    /* margin-top: -10px; */
+    height: 440px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url(../img/header.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: 0 30px; */
+    color: #eaeaea;
+    overflow: hidden;
+    border-radius: 0 !important;
+}
+
+.jumbotron h1, .jumbotron p {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+section {
+    min-height: 420px;
+}
+
+.pkiri, .pkanan {
+    opacity: 0;
+    transform: translate(-50px, 0);
+    transition: 1s;
+}
+
+.pkanan {
+    transform: translate(50px, 0);
+}
+
+.pkiri.pmuncul, .pkanan.pmuncul {
+    opacity: 1;
+    transform: translate(0,0);
+}
+
+.portfolio .img-thumbnail {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: 0.7s;
+}
+
+.portfolio .img-thumbnail.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.contact {
+    min-height: 800px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 120px;
+    /* background-color: #666; */
+    background-color: #343A40;
+    padding-top: 30px;
+}
+
+footer p {
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+/* Hide short text by default (resolution > 750px) */
+@media (min-width: 750px) {
+    .short-text { display: none; }
+    .full-text { display: inline-block; }
+}
+
+/* When resolution <= 750px, hide full text and show short text */
+@media (max-width: 750px) {
+    .short-text { display: inline-block; }
+    .full-text { display: none; }
+}
+
+.fixed-top.scrolled {
+    background-color: #343A40 !important;
+    color: #eaeaea;
+    transition: background-color 200ms linear;
+}
+

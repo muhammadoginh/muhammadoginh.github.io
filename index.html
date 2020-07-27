@@ -1,13 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="home">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <title>Portofolio</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/bootstrap-4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/portofolio/style.css">
+
 </head>
 <body>
 
-    <h1>hello</h1>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-transparent">
+        <div class="container">
+            <a class="navbar-brand page-scroll full-text" href="#home">Muhammad Ogin Hasanuddin</a>
+            <a class="navbar-brand page-scroll short-text" href="#home">MOH</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+       
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">       
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0 test">
+                    <li class="nav-item">                  
+                        <a class="nav-link page-scroll" href="#about">About <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+
+    <!-- jumbotron -->
+    <div class="jumbotron text-center">
+        <img src="assets/img/profile.jpg" width="20%" class="rounded-circle img-thumbnail mt-4">
+        <h1 class="display-4">Muhammad Ogin Hasanuddin</h1>
+        <p class="lead">Lecturer | Web Developer | Android Developer</p>
+    </div>
+    <!-- akhir jumbotron -->
+
+
+    <!-- about -->
+    <section class="about pt-4" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="text-center">About</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-5 text-center">
+                    <p class="pkiri">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim modi nobis velit temporibus sapiente voluptas voluptatibus dicta sint quam, vel, laudantium architecto. Voluptate eligendi molestiae ducimus repellendus, iusto quidem accusamus?</p>
+                </div>
+                <div class="col-sm-5 text-center">
+                    <p class="pkanan">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure facilis nobis tempore vero asperiores maiores, doloribus laborum culpa excepturi aspernatur voluptate ad ratione non nulla amet tempora placeat, itaque omnis.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir about -->
+
+
+    <!-- portofolio -->
+    <section class="portfolio bg-light pt-4 pb-4" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Portfolio</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 mb-3">
+                    <a href="">
+                        <img class="img-thumbnail" src="assets/img/portfolio/header.png">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">
+                        <img class="img-thumbnail" src="assets/img/portfolio/header.png">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">
+                        <img class="img-thumbnail" src="assets/img/portfolio/header.png">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">
+                        <img class="img-thumbnail" src="assets/img/portfolio/header.png">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">
+                        <img class="img-thumbnail" src="assets/img/portfolio/header.png">
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <a href="">
+                        <img class="img-thumbnail" src="assets/img/portfolio/header.png">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir portofolio -->
+
+
+    <!-- kontak -->
+    <section class="contact pt-4" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2>Contact</h2>
+                    <hr>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-8 offset-2">
+                    <form action="">
+                        <div class="form-group row">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" class="form-control" placeholder="masukkan nama">
+                        </div>
+                   
+                        <div class="form-group row">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="masukkan email">
+                        </div>
+                    
+                        <div class="form-group row">
+                            <label for="telp">No Telepon</label>
+                            <input type="tel" id="telp" class="form-control" placeholder="masukkan no. telepon">
+                        </div>
+
+                        <div class="form-group row">
+                            <select class="form-control">
+                                <option value="">-- Pilih Kategori --</option>
+                                <option value="">Web Development</option>
+                                <option value="">Android Development</option>
+                            </select>
+                        </div>
+                   
+                        <div class="form-group row">
+                            <label for="pesan">Pesan</label>
+                            <textarea name="pesan" id="pesan" rows="10" class="form-control" placeholder="masukkan pesan"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- akhir kontak -->
+
+
+    <!-- footer -->
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-12">
+                <p>&copy; Copyright 2020 | built with <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 16" width="12" height="16"><path style="fill: salmon;" fill-rule="evenodd" d="M8.727 3C7.091 3 6.001 4.65 6.001 4.65S4.909 3 3.273 3C1.636 3 0 4.1 0 6.3 0 9.6 6 14 6 14s6-4.4 6-7.7C12 4.1 10.364 3 8.727 3z"></path></svg> by <a href="http://">Puraka Academy</a>.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <a href="http://" class="btn btn-danger">Subscribe to YouTube</a>
+                </div>                
+            </div>
+        </div>
+    </footer>
+    <!-- akhir footer -->
     
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="assets/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/ajax/libs/popper.min.js"></script>
+    <script src="assets/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+
+    <script src="assets/portofolio/script.js"></script>
+
 </body>
 </html>

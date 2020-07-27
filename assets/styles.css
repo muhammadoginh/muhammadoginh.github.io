@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    background-color: black;
+}
+
+.sidenav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #114d46;
+    transition: .5s;
+    padding-top: 60px;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.sidenav a{
+    text-decoration: none;
+    font-size: 25px;
+    display: block;
+    color: #adadad;
+    transition: .3;
+    padding: 8px 8px 8px 32px;
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn{
+    font-size: 30px;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+}
+
+#main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: margin-left .5s;
+    text-align: center;
+    line-height: 1.2;
+}
+#main h2{
+    font-size: 3rem;
+    margin: 0;
+    color: #d6d6d6;
+}
+
+#main p{
+    color: #a7a7a7;
+}
+
+#main span{
+    font-size: 30px;
+    cursor: pointer;
+    color: #a7a7a7;
+}
+
+#main span svg{
+    margin-top: 5px;
+    margin-right: 5px;
+}
